@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsTestProject>true</IsTestProject>
@@ -17,9 +17,6 @@
     <PackageReference Include="Testcontainers.Redis" />
     <PackageReference Include="xunit" />
     <PackageReference Include="xunit.runner.visualstudio" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\Multicaster.Distributed.Redis\Multicaster.Distributed.Redis.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Using Include="Xunit" />
