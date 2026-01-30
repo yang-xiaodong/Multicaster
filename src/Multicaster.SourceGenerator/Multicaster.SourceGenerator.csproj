@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>12</LangVersion>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsRoslynComponent>true</IsRoslynComponent>
@@ -11,7 +10,7 @@
     <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
     <DevelopmentDependency>true</DevelopmentDependency>
     <AnalyzerLanguage>cs</AnalyzerLanguage>
-
+    <NoWarn>$(NoWarn);1591;1573;1572;1570;RS2008</NoWarn>
     <!-- NuGet Package -->
     <IsPackable>true</IsPackable>
     <PackageId>Multicaster.SourceGenerator</PackageId>
@@ -25,7 +24,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="all" />
-    <PackageReference Include="PolySharp" PrivateAssets="all" />
   </ItemGroup>
  
   <ItemGroup>
