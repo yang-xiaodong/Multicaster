@@ -7,9 +7,8 @@
 
     <!-- NuGet -->
     <IsPackable>true</IsPackable>
-    <PackageId>Multicaster</PackageId>
+    <PackageId>Hanshan.Multicaster</PackageId>
     <Description>Provides a proxy for transparently invoking methods of multiple POCO instances or remote clients through an interface.</Description>
-
     <AssemblyName>Cysharp.Runtime.$(PackageId)</AssemblyName>
     <RootNamespace>Cysharp.Runtime.Multicast</RootNamespace>
   </PropertyGroup>

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -6,14 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <IsRoslynComponent>true</IsRoslynComponent>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+    <BuildOutputTargetFolder>analyzers/dotnet/cs</BuildOutputTargetFolder>
     <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
     <DevelopmentDependency>true</DevelopmentDependency>
     <AnalyzerLanguage>cs</AnalyzerLanguage>
     <NoWarn>$(NoWarn);1591;1573;1572;1570;RS2008</NoWarn>
     <!-- NuGet Package -->
     <IsPackable>true</IsPackable>
-    <PackageId>Multicaster.SourceGenerator</PackageId>
+    <PackageId>Hanshan.Multicaster.SourceGenerator</PackageId>
     <Description>Multicaster Source Generator for AOT support - generates static proxy implementations</Description>
     <PackageTags>Multicaster;SourceGenerator;AOT;Proxy</PackageTags>
 
@@ -26,8 +27,6 @@
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="all" />
   </ItemGroup>
  
-  <ItemGroup>
-    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-  </ItemGroup>
+  <!-- Build output is packed into analyzers/dotnet/cs via BuildOutputTargetFolder -->
 
 </Project>

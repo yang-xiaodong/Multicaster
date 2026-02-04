@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.2.11415.280 d18.0
+VisualStudioVersion = 18.2.11415.280
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multicaster", "src\Multicaster\Multicaster.csproj", "{90FEB150-0A93-4905-9265-1658D3AA3CEB}"
 EndProject
@@ -8,16 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multicaster.Tests", "test\M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7ED9EEF8-6BF3-4F69-BD7E-D1B25905BD30}"
 	ProjectSection(SolutionItems) = preProject
-		src\Directory.Build.props = src\Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		README.md = README.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub Actions", "GitHub Actions", "{65CEBDFD-BB48-49B3-B03D-BADFF0F900BB}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\build-main.yaml = .github\workflows\build-main.yaml
-		.github\workflows\build-release.yml = .github\workflows\build-release.yml
-		.github\workflows\stale.yml = .github\workflows\stale.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "perf", "perf", "{9AA4E5CA-D1F3-4DF9-AE7E-9CA990CD81AC}"
@@ -59,7 +51,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{65CEBDFD-BB48-49B3-B03D-BADFF0F900BB} = {7ED9EEF8-6BF3-4F69-BD7E-D1B25905BD30}
 		{E7AF6DAF-FEAF-486C-82CC-2347895177A2} = {9AA4E5CA-D1F3-4DF9-AE7E-9CA990CD81AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
